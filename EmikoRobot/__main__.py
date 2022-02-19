@@ -93,7 +93,7 @@ PM_START_TEXT = """
 
 buttons = [
     [
-        InlineKeyboardButton(text="about FRDSBUKANROBOT", callback_data="emiko_"),
+        InlineKeyboardButton(text="about ꜰʀᴅs_ʙᴜᴋᴀɴ_ʀᴏʙᴏᴛ", callback_data="emiko_"),
     ],
     [
         InlineKeyboardButton(text="Get Help", callback_data="help_back"),
@@ -103,7 +103,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="➗ Add FRDSBUKANROBOT To Your Group ➗", url=f"t.me/{bu}?startgroup=new"),
+            text="➗ Add ꜰʀᴅs_ʙᴜᴋᴀɴ_ʀᴏʙᴏᴛ To Your Group ➗", url=f"t.me/{bu}?startgroup=new"),
     ],
 ]
 
@@ -360,15 +360,15 @@ def emiko_about_callback(update, context):
     query = update.callback_query
     if query.data == "emiko_":
         query.message.edit_text(
-            text="๏ I'm *FRDSBUKANROBOT*, a powerful group management bot built to help you manage your group easily."
+            text="๏ I'm *ꜰʀᴅs_ʙᴜᴋᴀɴ_ʀᴏʙᴏᴛ*, a powerful group management bot built to help you manage your group easily."
             "\n• I can restrict users."
             "\n• I can greet users with customizable welcome messages and even set a group's rules."
             "\n• I have an advanced anti-flood system."
             "\n• I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc."
             "\n• I have a note keeping system, blacklists, and even predetermined replies on certain keywords."
             "\n• I check for admins' permissions before executing any command and more stuffs"
-            "\n\n_FRDSBUKANROBOT's licensed under the GNU General Public License v3.0_"
-            "\n\n Click on button bellow to get basic help for FRDSBUKANROBOT.",
+            "\n\n_ꜰʀᴅs_ʙᴜᴋᴀɴ_ʀᴏʙᴏᴛ's licensed under the GNU General Public License v3.0_"
+            "\n\n Click on button bellow to get basic help for ꜰʀᴅs_ʙᴜᴋᴀɴ_ʀᴏʙᴏᴛ.",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -408,7 +408,7 @@ def emiko_about_callback(update, context):
     elif query.data == "emiko_admin":
         query.message.edit_text(
             text=f"*๏ Let's make your group bit effective now*"
-            "\nCongragulations, FRDSBUKANROBOT now ready to manage your group."
+            "\nCongragulations, ꜰʀᴅs_ʙᴜᴋᴀɴ_ʀᴏʙᴏᴛ now ready to manage your group."
             "\n\n*Admin Tools*"
             "\nBasic Admin tools help you to protect and powerup your group."
             "\nYou can ban members, Kick members, Promote someone as admin through commands of bot."
@@ -435,7 +435,7 @@ def emiko_about_callback(update, context):
         )
     elif query.data == "emiko_support":
         query.message.edit_text(
-            text="*๏ FRDS support chats*"
+            text="*๏ ꜰʀᴅs support chats*"
             "\nJoin My Support Group/Channel for see or report a problem on Emiko.",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
@@ -715,7 +715,7 @@ def get_settings(update: Update, context: CallbackContext):
     msg = update.effective_message  # type: Optional[Message]
 
     # ONLY send settings in PM
-    if chat.type != chat.PRIVATE:
+    if chat.type != chat.PRIVATE: ini
         if is_user_admin(chat, user.id):
             text = "Click here to get this chat's settings, as well as yours."
             msg.reply_text(
