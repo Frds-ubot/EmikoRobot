@@ -93,7 +93,7 @@ PM_START_TEXT = """
 
 buttons = [
     [
-        InlineKeyboardButton(text="About Oreki Robot", callback_data="emiko_"),
+        InlineKeyboardButton(text="About Frds Bukan Robot", callback_data="emiko_"),
     ],
     [
         InlineKeyboardButton(text="Get Help", callback_data="help_back"),
@@ -103,7 +103,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="➗ Add Oreki To Your Group ➗", url=f"t.me/{bu}?startgroup=new"),
+            text="➗ Add Frds Bukan Robot To Your Group ➗", url=f"t.me/{bu}?startgroup=new"),
     ],
 ]
 
