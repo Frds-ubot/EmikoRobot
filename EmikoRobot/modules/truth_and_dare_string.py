@@ -1,4 +1,4 @@
- TRUTH = (
+TRUTH = (
      "Apakah kamu pernah membuat hantu seseorang?"  "Apakah kamu pernah berjalan di atas orang tuamu melakukan 'itu'?",
      "Siapa orang terakhir yang paling kamu sukai? Mengapa?",
      "Apakah kamu pernah diskors dari sekolah?",
@@ -17,7 +17,7 @@
      "Apakah kamu pernah ketahuan sedang memeriksa seseorang?",
  )
 
- DARE = (
+DARE = (
      "Tampilkan foto paling memalukan di ponsel Anda"
      "Tampilkan lima orang terakhir yang Anda kirimi SMS dan apa isi pesannya",
      "Biarkan seluruh grup DM seseorang dari akun Instagram Anda",
