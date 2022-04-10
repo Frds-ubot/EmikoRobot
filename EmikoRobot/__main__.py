@@ -93,7 +93,7 @@ PM_START_TEXT = """
 
 buttons = [
     [
-        InlineKeyboardButton(text="About Frds Bukan Robot", callback_data="emiko_"),
+        InlineKeyboardButton(text="Tentang Frds Tapi Robot", callback_data="emiko_"),
     ],
     [
         InlineKeyboardButton(text="👮‍♀ Manage", callback_data="help_back"),
@@ -388,7 +388,7 @@ def emiko_about_callback(update, context):
                     InlineKeyboardButton(text="Go Back", callback_data="emiko_back"),
                  ]
                 ]
-            ),
+            ), 
         )
     elif query.data == "emiko_back":
         first_name = update.effective_user.first_name
