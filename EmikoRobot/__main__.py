@@ -83,7 +83,7 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 *Hello {} !*
-✪ I'm an anime-theme management bot [✨](https://telegra.ph/file/3b76eea51522e0e6bed8a.jpg)
+✪ I'm Frds is a bot manager + music to manage your group well. [✨](https://telegra.ph/file/3b76eea51522e0e6bed8a.jpg)
 ────────────────────────
 × *Uptime:* `{}`
 × `{}` *users, across* `{}` *chats.*
@@ -93,7 +93,7 @@ PM_START_TEXT = """
 
 buttons = [
     [
-        InlineKeyboardButton(text="Tentang Frds Tapi Robot", callback_data="emiko_"),
+        InlineKeyboardButton(text="Tentang Frds Robot", callback_data="emiko_"),
     ],
     [
         InlineKeyboardButton(text="👮‍♀ Manage", callback_data="help_back"),
@@ -103,7 +103,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="➗ Add Frds Tapi Robot To Your Group ➗", url=f"t.me/{bu}?startgroup=new"),
+            text="➗ Add Frds Robot To Your Group ➗", url=f"t.me/{bu}?startgroup=new"),
     ],
 ]
 
@@ -408,7 +408,7 @@ def emiko_about_callback(update, context):
     elif query.data == "emiko_admin":
         query.message.edit_text(
             text=f"*๏ Let's make your group bit effective now*"
-            "\nCongragulations, OrekiRobot now ready to manage your group."
+            "\nCongragulations, FrdsRobot now ready to manage your group."
             "\n\n*Admin Tools*"
             "\nBasic Admin tools help you to protect and powerup your group."
             "\nYou can ban members, Kick members, Promote someone as admin through commands of bot."
@@ -435,14 +435,14 @@ def emiko_about_callback(update, context):
         )
     elif query.data == "emiko_support":
         query.message.edit_text(
-            text="*๏ Emiko support chats*"
+            text="*๏ Frds support chats*"
             "\nJoin My Support Group/Channel for see or report a problem on Emiko.",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Support", url="t.me/orekisupport"),
-                    InlineKeyboardButton(text="Updates", url="https://t.me/henpr0ject"),
+                    InlineKeyboardButton(text="Support", url="t.me/frdssupport"),
+                    InlineKeyboardButton(text="Updates", url="https://t.me/frdsproject"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="emiko_"),
