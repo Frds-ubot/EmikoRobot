@@ -83,7 +83,7 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 *Hello {} !*
-✪ I'm an anime-theme management bot [✨](https://telegra.ph/file/1a1b88fa9b705d47f900c.jpg)
+✪ I'm an anime-theme management bot [✨](https://telegra.ph/file/c47c1e477c6eaa7ff7f68.jpg)
 ────────────────────────
 × *Uptime:* `{}`
 × `{}` *users, across* `{}` *chats.*
@@ -93,7 +93,7 @@ PM_START_TEXT = """
 
 buttons = [
     [
-        InlineKeyboardButton(text="about ꜰʀᴅs_ʙᴜᴋᴀɴ_ʀᴏʙᴏᴛ", callback_data="emiko_"),
+        InlineKeyboardButton(text="About Oreki Robot", callback_data="emiko_"),
     ],
     [
         InlineKeyboardButton(text="Get Help", callback_data="help_back"),
@@ -103,7 +103,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="➗ Add ꜰʀᴅs_ʙᴜᴋᴀɴ_ʀᴏʙᴏᴛ To Your Group ➗", url=f"t.me/{bu}?startgroup=new"),
+            text="➗ Add Oreki To Your Group ➗", url=f"t.me/{bu}?startgroup=new"),
     ],
 ]
 
@@ -113,7 +113,7 @@ Click on the button bellow to get description about specifics command."""
 
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project by contacting @firrds \
+ You can support the project by contacting @hen4ex \
  Supporting isnt always financial! \
  Those who cannot provide monetary support are welcome to help us develop the bot at ."""
 
@@ -358,23 +358,23 @@ def help_button(update, context):
 
 def emiko_about_callback(update, context):
     query = update.callback_query
-    if query.data == "emiko_":
+    if query.data == "oreki_":
         query.message.edit_text(
-            text="๏ I'm *ꜰʀᴅs_ʙᴜᴋᴀɴ_ʀᴏʙᴏᴛ*, a powerful group management bot built to help you manage your group easily."
+            text="๏ I'm *Oreki*, a powerful group management bot built to help you manage your group easily."
             "\n• I can restrict users."
             "\n• I can greet users with customizable welcome messages and even set a group's rules."
             "\n• I have an advanced anti-flood system."
             "\n• I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc."
             "\n• I have a note keeping system, blacklists, and even predetermined replies on certain keywords."
             "\n• I check for admins' permissions before executing any command and more stuffs"
-            "\n\n_ꜰʀᴅs_ʙᴜᴋᴀɴ_ʀᴏʙᴏᴛ's licensed under the GNU General Public License v3.0_"
-            "\n\n Click on button bellow to get basic help for ꜰʀᴅs_ʙᴜᴋᴀɴ_ʀᴏʙᴏᴛ.",
+            "\n\n_Oreki's licensed under the GNU General Public License v3.0_"
+            "\n\n Click on button bellow to get basic help for OrekiRobot.",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Admins", callback_data="emiko_admin"),
+                    InlineKeyboardButton(text="Admins", callback_data="emiko _admin"),
                     InlineKeyboardButton(text="Notes", callback_data="emiko_notes"),
                  ],
                  [
@@ -382,7 +382,7 @@ def emiko_about_callback(update, context):
                     InlineKeyboardButton(text="Credits", callback_data="emiko_credit"),
                  ],
                  [
-                    InlineKeyboardButton(text="Source Code", url="https://Jancuk.com"),
+                    InlineKeyboardButton(text="Source Code", url="https://github.com/kennedy-ex/EmikoRobot"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="emiko_back"),
@@ -408,7 +408,7 @@ def emiko_about_callback(update, context):
     elif query.data == "emiko_admin":
         query.message.edit_text(
             text=f"*๏ Let's make your group bit effective now*"
-            "\nCongragulations, ꜰʀᴅs_ʙᴜᴋᴀɴ_ʀᴏʙᴏᴛ now ready to manage your group."
+            "\nCongragulations, OrekiRobot now ready to manage your group."
             "\n\n*Admin Tools*"
             "\nBasic Admin tools help you to protect and powerup your group."
             "\nYou can ban members, Kick members, Promote someone as admin through commands of bot."
@@ -435,14 +435,14 @@ def emiko_about_callback(update, context):
         )
     elif query.data == "emiko_support":
         query.message.edit_text(
-            text="*๏ ꜰʀᴅs support chats*"
+            text="*๏ Emiko support chats*"
             "\nJoin My Support Group/Channel for see or report a problem on Emiko.",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Support", url="https://t.me/anonymous_chat_group2"),
-                    InlineKeyboardButton(text="Updates", url="https://t.me/frdsupport"),
+                    InlineKeyboardButton(text="Support", url="t.me/orekisupport"),
+                    InlineKeyboardButton(text="Updates", url="https://t.me/henpr0ject"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="emiko_"),
@@ -455,7 +455,7 @@ def emiko_about_callback(update, context):
 
     elif query.data == "emiko_credit":
         query.message.edit_text(
-            text=f"๏ Credis for FRDS\n"
+            text=f"๏ Credis for Emiko\n"
             "\nHere Developers Making And Give Inspiration For Made The EmikoRobot",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
@@ -715,7 +715,7 @@ def get_settings(update: Update, context: CallbackContext):
     msg = update.effective_message  # type: Optional[Message]
 
     # ONLY send settings in PM
-    if chat.type != chat.PRIVATE: ini
+    if chat.type != chat.PRIVATE:
         if is_user_admin(chat, user.id):
             text = "Click here to get this chat's settings, as well as yours."
             msg.reply_text(
