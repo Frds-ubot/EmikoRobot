@@ -96,7 +96,7 @@ buttons = [
         InlineKeyboardButton(text="About Frds Bukan Robot", callback_data="emiko_"),
     ],
     [
-        InlineKeyboardButton(text="Get Help", callback_data="help_back"),
+        InlineKeyboardButton(text="👮‍♀ Manage", callback_data="help_back"),
         InlineKeyboardButton(
             text="Try inline!​​", switch_inline_query_current_chat=""
         ),
